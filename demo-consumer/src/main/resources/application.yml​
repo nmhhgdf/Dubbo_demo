@@ -1,0 +1,7 @@
+dubbo:
+  application:
+    name: demo-consumer
+  registry:
+    address: nacos://${NACOS_HOST:localhost}:8848
+  consumer:
+    check: false  # 启动时不强制检查提供者是否在线

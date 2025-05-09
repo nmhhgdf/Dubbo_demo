@@ -1,0 +1,10 @@
+dubbo:
+  application:
+    name: demo-provider
+  protocol:
+    name: dubbo
+    port: 20880
+  registry:
+    address: nacos://${NACOS_HOST:localhost}:8848
+  scan:
+    base-packages: com.example.provider.service
