@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class ConsumerController {
 
-    @DubboReference
+    @DubboReference(version = "1.0.0", group = "user-service")
     private UserService userService;
 
     @GetMapping("/user")
